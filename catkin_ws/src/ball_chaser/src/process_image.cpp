@@ -44,11 +44,11 @@ void process_image_callback(const sensor_msgs::Image img)
     }
 
     if(ball_direction == -1)
-        drive_robot(0.5, 0.5);
+        drive_robot(0.1, 0.5);
     else if(ball_direction == 0)
         drive_robot(0.5, 0.0);
     else if(ball_direction == 1)
-        drive_robot(0.5, -0.5);
+        drive_robot(0.1, -0.5);
     else{
         ROS_INFO("No ball found.");
         drive_robot(0.0, 0.0);
