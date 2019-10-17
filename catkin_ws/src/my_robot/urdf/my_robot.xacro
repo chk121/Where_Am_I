@@ -77,7 +77,6 @@
       <geometry>
         <cylinder length="0.05" radius="0.1"/>
       </geometry>
-      <material name="orange"/>
     </visual>
 
     <inertial>
@@ -102,7 +101,6 @@
       <geometry>
         <cylinder length="0.05" radius="0.1"/>
       </geometry>
-      <material name="orange"/>
     </visual>
 
     <inertial>
@@ -203,13 +201,5 @@
     <parent link="chassis"/>
     <axis xyz="0 1 0"/>
   </joint>
-
-   <gazebo reference="right_wheel">
-      <material>Gazebo/Blue</material>
-   </gazebo>
-
-   <gazebo reference="left_wheel">
-      <material>Gazebo/Blue</material>
-   </gazebo>
 
 </robot>

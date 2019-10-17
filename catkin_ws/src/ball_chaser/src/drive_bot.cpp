@@ -18,8 +18,6 @@ bool handle_drive_request(ball_chaser::DriveToTarget::Request& req, ball_chaser:
     // Publish angles to drive the robot
     motor_command_publisher.publish(motor_command);
 
-    // Wait 1 seconds for robot to settle
-    ros::Duration(1).sleep();
     // Return a response message
     res.msg_feedback = "Linear & angular velocities set - x: " + std::to_string(req.linear_x) + " , z: " + std::to_string(req.angular_z);
     ROS_INFO_STREAM(res.msg_feedback);
