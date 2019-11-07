@@ -1,0 +1,19 @@
+global_costmap:
+   global_frame: map
+   robot_base_frame: robot_footprint
+   update_frequency: 0.5
+   publish_frequency: 0.5
+   width: 15.0
+   height: 15.0
+   resolution: 0.01
+   # the x origin of the global costmap in the global frame (in m)
+   origin_x: -15.0
+   # the y origin of the global costmap in the global frame (in m)
+   origin_y: -15.0
+
+   static_map: true
+   rolling_window: false
+
+   # padding space for the footprint of the robot
+   footprint_padding: 0.01
+

@@ -1,0 +1,20 @@
+local_costmap:
+   global_frame: odom
+   robot_base_frame: robot_footprint
+   update_frequency: 1.0
+   publish_frequency: 1.0
+   # NOTE - the below parameters can be overwritten by some layers, namely the static map layer #
+   width: 10.0
+   height: 10.0
+   resolution: 0.01
+   # the x origin of the local costmap in the local frame (in m)
+   origin_x: 0.0
+   # the y origin of the local costmap in the local frame (in m)
+   origin_y: 0.0
+
+   # determines whether or not the local costmap should initialize itself based on a map served by map_server
+   static_map: false
+   rolling_window: true
+
+   # padding space for the footprint of the robot
+   footprint_padding: 0.01
